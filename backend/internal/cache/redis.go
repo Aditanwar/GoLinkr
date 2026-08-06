@@ -10,7 +10,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/redis/go-redis/v9"
-	"swiftlink/internal/models"
+	"golinkr/internal/models"
 )
 
 type RedisCache struct {

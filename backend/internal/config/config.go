@@ -14,9 +14,9 @@ type Config struct {
 
 func LoadConfig() *Config {
 	port := getEnv("PORT", "8080")
-	dbURL := getEnv("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/swiftlink?sslmode=disable")
+	dbURL := getEnv("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/golinkr?sslmode=disable")
 	redisURL := getEnv("REDIS_URL", "redis://localhost:6379/0")
-	jwtSecret := getEnv("JWT_SECRET", "swiftlink-super-secret-key-change-in-production")
+	jwtSecret := getEnv("JWT_SECRET", "golinkr-super-secret-key-change-in-production")
 	env := getEnv("ENVIRONMENT", "development")
 
 	return &Config{
